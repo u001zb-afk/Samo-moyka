@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101820">
+  <title>Samo Moyka</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="logo">SM</div>
+      <div><h1>Samo Moyka</h1><p>Boxlar holati va navbat</p></div>
+      <a class="channel" href="https://t.me/sabomoyka" target="_blank" rel="noreferrer">Kanal ↗</a>
+    </header>
+
+    <div id="notice" class="notice" role="status">Holat yuklanmoqda…</div>
+
+    <section class="grid">
+      <article class="bay" id="bay1">
+        <div class="bay-head"><span>1-BOX</span><span class="dot"></span></div>
+        <div class="car">🚘</div>
+        <h2 class="state">—</h2>
+        <p class="hint">Yuvish joyi</p>
+      </article>
+      <article class="bay" id="bay2">
+        <div class="bay-head"><span>2-BOX</span><span class="dot"></span></div>
+        <div class="car">🚙</div>
+        <h2 class="state">—</h2>
+        <p class="hint">Yuvish joyi</p>
+      </article>
+    </section>
+
+    <section class="queue panel">
+      <div><p class="eyebrow">NAVBAT HOLATI</p><h2 id="queueState">—</h2></div>
+      <div class="count"><strong id="queueCount">0</strong><span>ta mashina</span></div>
+    </section>
+    <section class="panel note-panel">
+      <p class="eyebrow">SAMO MOYKA XABARI</p>
+      <p id="publicNote">Hozircha izoh yo‘q.</p>
+      <small id="updatedAt"></small>
+    </section>
+
+    <section id="admin" class="panel admin hidden">
+      <div class="admin-title"><div><p class="eyebrow">BOSHQARUV</p><h2>Admin panel</h2></div><span class="admin-tag">ADMIN</span></div>
+      <div class="control-row"><span>1-box band</span><input id="box1" type="checkbox" class="switch"></div>
+      <div class="control-row"><span>2-box band</span><input id="box2" type="checkbox" class="switch"></div>
+      <div class="control-row"><span>Navbat mavjud</span><input id="queue" type="checkbox" class="switch"></div>
+      <label class="field">Navbatdagi mashinalar soni<input id="countInput" type="number" min="0" max="999" value="0"></label>
+      <label class="field">Mijozlarga izoh<textarea id="noteInput" rows="2" maxlength="240" placeholder="Masalan: 10 daqiqadan keyin bo‘sh joy chiqadi"></textarea></label>
+      <button id="saveBtn" class="primary">Holatni saqlash</button>
+      <div class="separator"></div>
+      <label class="field">Kanalga e’lon yuborish<textarea id="announcement" rows="3" maxlength="3500" placeholder="E’lon matnini yozing…"></textarea></label>
+      <button id="sendBtn" class="secondary">Kanalga yuborish</button>
+      <p class="admin-help">E’lon yuborish uchun @SaboMoykaBot kanalda administrator bo‘lishi kerak.</p>
+    </section>
+    <footer>© Samo Moyka</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
